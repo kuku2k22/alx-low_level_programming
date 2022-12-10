@@ -30,6 +30,5 @@ int main(void)
 
 	}
 	printf("\n");
-	return (0):q
-		   ;
+	return (0);
 }
