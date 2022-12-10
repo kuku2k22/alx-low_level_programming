@@ -7,19 +7,21 @@
  */
 int main(void)
 {
-	int tens;
-	int ones;
+	int n, m;
 
-	for (tens = 0; tens <= 9; tens++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (ones = tens + 1; ones <= 9; ones++)
+		for (n = 48; n<= 56; m++)
 		{
-			putchar(tens + '0');
-			putchar(ones + '0');
-			if (tens < 8)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
