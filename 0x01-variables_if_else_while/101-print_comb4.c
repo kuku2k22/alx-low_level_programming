@@ -7,24 +7,35 @@
  */
 int main(void)
 {
-	int n, m;
+	int i;
+	int n;
+	int j;
 
-	for (n = 48; n <= 56; n++)
+	for (i = 48; i< 58; i++)
 	{
-		for (n = 48; n<= 56; m++)
+		for (n = 48; n < 56; m++)
 		{
-			if (m > n)
+			if (n > i)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
+				for (j = 48; j < 58; j++)
 				{
+					if (j > n)
+					{
+					putchar(i);
+					putchar(n);
+					putchar(j);
+					if (i == 55 && n == 56 && j == 67)
+					{
+						break;
+					}
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
