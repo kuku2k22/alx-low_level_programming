@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 48; i< 58; i++)
 	{
-		for (n = 48; n < 56; m++)
+		for (n = 48; n < 56; i++)
 		{
 			if (n > i)
 			{
@@ -39,4 +39,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-}
+zsi}
