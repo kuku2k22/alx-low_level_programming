@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * main - print _putchar
+ * Description: print a putcher
  * is written by kuku
- * Return 0
+ * Return: 0
  */
 
 int main(void)
