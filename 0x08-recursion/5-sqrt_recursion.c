@@ -1,17 +1,31 @@
 #include "main.h"
 /**
- *_puts_recursion - prints a string
- *@s: pointer block of memory to fill
- *Return: void
+ * helper - Finds the square root of two numbers
+ * @a: The number
+ * @b: The number to test for the square root of @a
+ * Return: square root
  */
-void _puts_recursion(char *s)
+int helper(int a, int b)
 {
-	if (*s == '\0')
-	{
-		_putchar('\n');
-		return;
-	}
+	if (b * b > a)
+		return (-1);
 
-	_putchar (*s);
-	_puts_recursion(s + 1);
+	else if (b * b == a)
+		return (b);
+
+	else
+		return (helper(a, b + 1));
+
+	return (1);
+}
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: the number to return the square root of
+ * Return: the square root of @n
+ */
+int _sqrt_recursion(int n)
+{
+	if (n == 0)
+		return (0);
+	return (helper(n, 1));
 }
